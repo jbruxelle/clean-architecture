@@ -1,0 +1,19 @@
+{
+  "name": "clean-architecture",
+  "author": "jbruxelle",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.5"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.6.0",
+    "@types/jest": "^29.0.3",
+    "jest": "^29.0.3",
+    "prettier": "^2.7.1"
+  },
+  "scripts": {
+    "test:jest": "jest --watch",
+    "test:cucumber": "cucumber-js"
+  }
+}
