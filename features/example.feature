@@ -6,5 +6,4 @@ Feature: : This is an example feature
     Given something
     When something else happens
     Then something should happen
-    And something else should happen
-    But something else should not happen
+

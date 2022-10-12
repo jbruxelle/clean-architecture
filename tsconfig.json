@@ -1,5 +1,26 @@
 {
   "compilerOptions": {
-    "sourceMap": true
-  }
+    "sourceMap": true,
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "allowJs": true,
+    "checkJs": true,
+    "isolatedModules": true,
+    "paths": {
+      "@use-cases/*": ["src/core/application/use-cases/*"],
+      "@state": ["src/core/application/state.ts"],
+      "@store/*": ["./src/store/*"],
+      "@reducers/*": ["src/store/redux.reducers/*"],
+      "@ui/*": ["src/adapters/primary/user-interface/*"],
+      "@shared/*": ["src/shared/*"]
+    },
+    "types": ["vitest/globals"]
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
